@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# Mini-Game Web Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Mini-Game Web Portal**, a React-based web application featuring a collection of 5 engaging mini-games. This project is designed to showcase interactive UI, React state management, player profiles, leaderboards, and animated game feedback.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Five Mini-Games**:
+  - Memory Game: Match pairs with move tracking and completion animation.
+  - Quiz Game: Multiple-choice questions with immediate feedback and scoring.
+  - Tic-Tac-Toe: Play against a random AI opponent.
+  - Hangman: Classic word guessing with limited wrong attempts.
+  - 15 Puzzle: Classic sliding tiles puzzle with moves and timer tracking.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Player Profile System**: Enter your name to personalize gameplay and leaderboard entries.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Persistent Leaderboards**: Local storage based leaderboards per game tracking high scores, best moves, or fastest times.
 
-### `npm test`
+- **Reset & Back Buttons**: Consistent controls to restart or exit games seamlessly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Completion Modals**: Animated popups with congratulatory 3-star animations upon winning.
 
-### `npm run build`
+- **Responsive Design**: Works on desktops, tablets, and mobile devices.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Access the live demo here:  
+[https://b000ster.github.io/mini-game-web-portal/](https://b000ster.github.io/mini-game-web-portal/)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+_(Include some screenshots or GIFs demonstrating each game UI and leaderboard if you want.)_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation & Running Locally
 
-## Learn More
+1. **Clone the repository**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone https://github.com/b000ster/mini-game-web-portal.git
+cd mini-game-web-portal
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Install dependencies**
 
-### Code Splitting
+Make sure you have Node.js (v14+) and npm installed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+3. **Run the development server**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+The app should open automatically at [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Build for production**
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This creates an optimized build in the `build` folder.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Deployment to GitHub Pages
 
-### `npm run build` fails to minify
+To deploy to GitHub Pages, ensure your `package.json` includes the correct `homepage` field and deploy scripts:
+"homepage": "https://b000ster.github.io/mini-game-web-portal/",
+"scripts": {
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+// ...other scripts
+}
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Install `gh-pages` if not done yet:
+
+
+Deploy with:
+
+
+For detailed guidance, see the [Create React App deployment docs](https://facebook.github.io/create-react-app/docs/deployment).
+
+---
+
+## Technologies Used
+
+- [React](https://reactjs.org/) (v18+)
+- React Context API for state management
+- localStorage for data persistence
+- CSS for responsive and animated UI
+- GitHub Pages for deployment
+
+---
+
+## Folder Structure
+
+mini-game-web-portal/
+├── public/
+│ ├── assets and images
+├── src/
+│ ├── components/ # Shared UI components
+│ ├── games/ # Individual mini-game components
+│ ├── PlayerContext.js # Player name context provider
+│ ├── App.js # Root component
+│ └── index.js # React entry point
+├── package.json
+└── README.md
+
+text
+
+---
+
+## Contribution
+
+Contributions are welcome! If you find any issues or want to add new games or features, please open an issue or submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+Created by Vemula Sai Vikas – feel free to contact me!
+
+- GitHub: [b000ster](https://github.com/b000ster)
+- Email: saivikas.vemula67@gmail.com
+
+---
+
+Happy gaming! 🎮
+If you want, I can also help you prepare a shorter README version, or add badges, or customize the sections further for your portfolio or GitHub profile. Just ask!
+
