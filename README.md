@@ -132,5 +132,4 @@ Created by Vemula Sai Vikas – feel free to contact me!
 ---
 
 Happy gaming! 🎮
-If you want, I can also help you prepare a shorter README version, or add badges, or customize the sections further for your portfolio or GitHub profile. Just ask!
 
